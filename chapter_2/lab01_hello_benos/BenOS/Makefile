@@ -1,4 +1,4 @@
-ARMGNU ?= aarch64-linux-gnu
+ARMGNU ?= aarch64-elf
 
 board ?= rpi4
 
