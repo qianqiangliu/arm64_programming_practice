@@ -4,10 +4,10 @@ board ?= rpi4
 
 ifeq ($(board), rpi3)
 COPS += -DCONFIG_BOARD_PI3B
-QEMU_FLAGS  += -machine raspi3
+QEMU_FLAGS  += -machine raspi3b
 else ifeq ($(board), rpi4)
 COPS += -DCONFIG_BOARD_PI4B
-QEMU_FLAGS  += -machine raspi4
+QEMU_FLAGS  += -machine raspi4b
 endif
 
 COPS += -g -Wall -nostdlib -nostdinc -Iinclude
